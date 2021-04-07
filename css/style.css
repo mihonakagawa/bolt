@@ -28,7 +28,7 @@ body {
 
 /* 共通部分ここまで＿＿＿＿＿＿＿＿＿＿＿＿ */
 
-/* ホバーボタンの装飾ここから＿＿＿＿＿＿＿＿＿＿＿ */
+/* ホバーの装飾まとめ ここから＿＿＿＿＿＿＿＿＿＿＿ */
 
 .anchor {
   display: block;
@@ -66,7 +66,7 @@ body {
   opacity: 1;
 }
 
-/* ボタンの装飾ここまで＿＿＿＿＿＿＿＿＿＿＿ */
+/* ホバーの装飾まとめ ここまで＿＿＿＿＿＿＿＿＿＿＿ */
 
 /* ヘッダーここから__________________________*/
 
@@ -180,18 +180,14 @@ body {
 }
 
 .mail_box {
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  margin: 0 auto;
-  font-size: 0;
+  display: flex;
+  padding: 0 90px;
+  align-items: flex-start;
+  /* 内包する要素の縦方向を揃える */
 }
 
 .mail_box_elements {
-  display: inline-block;
-  vertical-align: top;
   margin-right: 90px;
-  font-size: 20px;
 }
 
 .mail_box_elements:last-child {
@@ -199,14 +195,13 @@ body {
 }
 
 .mail-text {
-  width: 100%;
-  box-sizing: border-box;
-  margin-left: -300px;
-  padding-left: 320px;
+  width: 570px;
 }
 
 .btn_email a {
   padding: 14px 20px;
+  /* 折り返ししない */
+  white-space: nowrap;
 }
 
 .sec__skills {
