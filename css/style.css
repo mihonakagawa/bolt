@@ -271,7 +271,8 @@ body {
 }
 
 .copy-wright {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   color: #fff;
 }
 
