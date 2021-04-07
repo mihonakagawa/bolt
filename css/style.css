@@ -2,12 +2,6 @@
 
 /* 共通部分ここから＿＿＿＿＿＿＿＿＿＿＿＿ */
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 body {
   font-family: "Lato";
   font-size: 20px;
@@ -141,7 +135,6 @@ body {
 .intro-inner {
   display: flex;
   justify-content: space-around;
-  align-items: top;
 }
 
 .intro_desc {
@@ -163,13 +156,27 @@ body {
   padding: 60px 0 70px 0;
 }
 
+.works-inner h1 {
+  margin-bottom: 40px;
+}
+
+.works__img_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .works__img {
-  margin: 40px 100px 40px 0;
-  float: left;
+  margin: 0 100px 80px 0;
 }
 
 .works__img:nth-child(3n) {
   margin-right: 0;
+}
+
+  /* 一番左下とそれ以降の全て */
+.works__img:nth-child(3n+1):nth-last-child(-n+3),
+.works__img:nth-child(3n+1):nth-last-child(-n+3) ~ .works__img {
+  margin-bottom: 90px;
 }
 
 .mail_box {
@@ -184,7 +191,6 @@ body {
   display: inline-block;
   vertical-align: top;
   margin-right: 90px;
-  margin-top: calc(90px - 40px);
   font-size: 20px;
 }
 
@@ -218,8 +224,11 @@ body {
   margin-bottom: 40px;
 }
 
+.skills__img_box {
+  display: flex;
+}
+
 .skills__img {
-  float: left;
   padding-right: 180px;
 }
 
@@ -262,12 +271,12 @@ body {
 }
 
 .footer-inner {
+  margin: 0 auto;
   padding: 20px 0 25px 0;
 }
 
 .copy-wright {
-  float: right;
-  display: flex;
+  text-align: right;
   color: #fff;
 }
 
