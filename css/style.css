@@ -47,23 +47,23 @@ body {
   color: #333;
 }
 
-.anc_sns {
-  width: 185px;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 20px;
-}
-
-.anc_sns:hover {
-  background-color: #fff;
-}
-
 .anc_works {
   opacity: 0.7;
 }
 
 .anc_works:hover {
   opacity: 1;
+}
+
+.anc_sns {
+  width: 185px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.anc_sns:hover {
+  background-color: #fff;
 }
 
 /* ホバーの装飾まとめ ここまで＿＿＿＿＿＿＿＿＿＿＿ */
