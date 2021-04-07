@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* 共通部分＿＿＿＿＿＿＿＿＿＿＿＿ */
+
 .clearfix::after {
   content: "";
   display: block;
@@ -26,17 +28,11 @@ body {
   background-color: #74cfae;
 }
 
-.btn_contact a {
-  padding: 14px 12px;
-}
-
-.btn_email a {
-  padding: 14px 20px;
-}
-
 .icon {
   font-size: 45px;
 }
+
+/* ボタンの装飾＿＿＿＿＿＿＿＿＿＿＿ */
 
 .anchor {
   transition: 0.3s;
@@ -73,6 +69,10 @@ body {
 
 .header__icon {
   color: #4e4e4e;
+}
+
+.btn_contact a {
+  padding: 14px 12px;
 }
 
 /* _______________________________________ */
@@ -178,6 +178,10 @@ body {
   box-sizing: border-box;
   margin-left: -300px;
   padding-left: 320px;
+}
+
+.btn_email a {
+  padding: 14px 20px;
 }
 
 .sec__skills {
