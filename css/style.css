@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 共通部分＿＿＿＿＿＿＿＿＿＿＿＿ */
+/* 共通部分ここから＿＿＿＿＿＿＿＿＿＿＿＿ */
 
 .clearfix::after {
   content: "";
@@ -32,18 +32,20 @@ body {
   font-size: 45px;
 }
 
-/* ボタンの装飾＿＿＿＿＿＿＿＿＿＿＿ */
+/* 共通部分ここまで＿＿＿＿＿＿＿＿＿＿＿＿ */
+
+/* ホバーボタンの装飾ここから＿＿＿＿＿＿＿＿＿＿＿ */
 
 .anchor {
+  display: block;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .anc_contact,
 .anc_email {
   color: #fff;
   font-size: 12px;
-  text-decoration: none;
-  display: block;
 }
 
 .anc_contact:hover,
@@ -51,7 +53,28 @@ body {
   color: #333;
 }
 
-/* _______________________________________ */
+.anc_sns {
+  width: 185px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.anc_sns:hover {
+  background-color: #fff;
+}
+
+.anc_works {
+  opacity: 0.7;
+}
+
+.anc_works:hover {
+  opacity: 1;
+}
+
+/* ボタンの装飾ここまで＿＿＿＿＿＿＿＿＿＿＿ */
+
+/* ヘッダーここから__________________________*/
 
 .header {
   background-color: #fff;
@@ -75,7 +98,9 @@ body {
   padding: 14px 12px;
 }
 
-/* _______________________________________ */
+/* ヘッダーここまで__________________________*/
+
+/* メイン　ここから__________________________*/
 
 .main {
   padding-top: 75px;
@@ -141,12 +166,6 @@ body {
 .works__img {
   margin: 40px 100px 40px 0;
   float: left;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.works__img:hover {
-  opacity: 1;
 }
 
 .works__img:nth-child(3n) {
@@ -228,27 +247,16 @@ body {
 
 .nav__sns_elements {
   display: table-cell;
-  width: 185px;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 20px;
-  transition: 0.3s;
 }
+
 
 .sns__icon {
   color: #74cfae;
 }
 
-.nav__sns_elements:hover {
-  background-color: #fff;
-}
+/* メイン　ここまで__________________________*/
 
-.anc_sns {
-  display: block;
-  background-color: #f2f2f2;
-}
-
-/* _______________________________________ */
+/* フッターここから__________________________*/
 
 .footer {
   background-color: #74cfae;
@@ -263,3 +271,5 @@ body {
   display: flex;
   color: #fff;
 }
+
+/* フッターここまで__________________________*/
