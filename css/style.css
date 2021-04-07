@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body  {
+  font-family: "Lato";
+  font-size: 20px;
+  color: #333;
+}
+
+.wrapper {
+  min-height: 100vh;
+  /* viewportに対しての高さ100% */
+}
+
+.container {
+  width: 100%;
+  /* 背景色のみ画面いっぱいに広がる */
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.link-btn {
+  background-color: #74cfae;
+}
+
+.btn_contact a {
+  padding: 14px 12px;
+}
+
+.btn_email a {
+  padding: 14px 20px;
+}
+
+.icon {
+  font-size: 45px;
+  /* フォントサイズ要再考 */
+}
+
+.anchor {
+  transition: 0.3s;
+}
+
+.anc_contact,
+.anc_email {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.anc_contact:hover,
+.anc_email:hover {
+  color: #333;
+}
+
+
+
+/* _______________________________________ */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icon {
+  color: #4e4e4e;
+}
+
+/* _______________________________________ */
+
+.main {
+  padding-top: 75px;
+  /* ヘッダーの下に回り込む余白分 */
+}
+
+.title {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 250px 0;
+  text-align: center;
+}
+
+.title_text {
+  text-align: center;
+  color: #74cfae;
+  font-family: "Raleway";
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.title_sub_text {
+  color: #c0c0c0;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+.sec__introduction {
+  background-color: #74cfae;
+  padding-top: 50px;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.intro_desc {
+  color: #fff;
+  width: 650px;
+  /* 目分量の幅のため要確認 */
+  text-align: center;
+}
+
+.intro_desc h1 {
+  margin: 35px 0;
+}
+
+.intro_desc p {
+  font-size: 20px;
+}
+
+.works {
+  background-color: #f2f2f2;
+}
+
+.works-inner {
+  text-align: center;
+  padding: 60px 0 70px 0;
+}
+
+.works__img {
+  margin: 40px 100px 40px 0;
+  float: left;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.works__img:hover {
+  opacity: 1;
+}
+
+.works__img:nth-child(3n) {
+  margin-right: 0;
+}
+
+.mail_box {
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.mail_box_elements {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 90px;
+  margin-top: calc(90px - 40px);
+  font-size: 20px;
+}
+
+.mail_box_elements:last-child {
+  margin-right: 0;
+}
+
+.mail-text {
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: -300px;
+  padding-left: 320px;
+}
+
+.sec__skills {
+  background-color: #4e4e4e;
+}
+
+.skills-inner {
+  padding: 70px 0 100px 0;
+  color: #fff;
+  text-align: center;
+  width: 1028px;
+}
+
+.skills-inner h1 {
+  margin-bottom: 40px;
+}
+
+.skills__img {
+  /* display: table-cell; */
+  float: left;
+  padding-right: 180px;
+}
+
+.skills__img:last-child {
+  font-size: 16px;
+  padding-right: 0;
+}
+
+.skills_figcaption {
+  margin-top: 20px;
+}
+
+.navigation {
+  background-color: #f2f2f2;
+}
+
+.nav-inner {
+  padding: 200px 0;
+}
+
+.nav__sns {
+  display: table;
+  margin: 0 auto;
+}
+
+.nav__sns_elements {
+  display: table-cell;
+  width: 185px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.sns__icon {
+  color: #74cfae;
+}
+
+.nav__sns_elements:hover {
+  background-color: #fff;
+}
+
+.anc_sns {
+  display: block;
+  background-color: #f2f2f2;
+}
+
+/* _______________________________________ */
+
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-inner {
+  padding: 20px 0 25px 0;
+}
+
+.copy-wright {
+  float: right;
+  display: flex;
+  color: #fff;
+}
