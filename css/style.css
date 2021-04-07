@@ -6,15 +6,10 @@
   clear: both;
 }
 
-body  {
+body {
   font-family: "Lato";
   font-size: 20px;
   color: #333;
-}
-
-.wrapper {
-  min-height: 100vh;
-  /* viewportに対しての高さ100% */
 }
 
 .container {
@@ -41,7 +36,6 @@ body  {
 
 .icon {
   font-size: 45px;
-  /* フォントサイズ要再考 */
 }
 
 .anchor {
@@ -60,8 +54,6 @@ body  {
 .anc_email:hover {
   color: #333;
 }
-
-
 
 /* _______________________________________ */
 
@@ -130,16 +122,11 @@ body  {
 .intro_desc {
   color: #fff;
   width: 650px;
-  /* 目分量の幅のため要確認 */
   text-align: center;
 }
 
 .intro_desc h1 {
   margin: 35px 0;
-}
-
-.intro_desc p {
-  font-size: 20px;
 }
 
 .works {
@@ -209,7 +196,6 @@ body  {
 }
 
 .skills__img {
-  /* display: table-cell; */
   float: left;
   padding-right: 180px;
 }
