@@ -31,6 +31,12 @@ body {
   font-family: "Raleway";
 }
 
+.images {
+  max-width: 100%;
+  vertical-align: bottom;
+  line-height: 1.0em;
+}
+
 .flex-container {
   display: flex;
 }
@@ -88,6 +94,9 @@ body {
 
 .header-inner {
   padding: 15px 0;
+}
+
+.header_box {
   justify-content: space-between;
   align-items: center;
 }
@@ -96,7 +105,7 @@ body {
   color: #4e4e4e;
 }
 
-.btn_contact a {
+.anc_contact {
   padding: 14px 12px;
 }
 
@@ -112,8 +121,11 @@ body {
 .title {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 250px 0;
   text-align: center;
+}
+
+.title-inner {
+  padding: 250px 0;
 }
 
 .title_text {
@@ -132,12 +144,12 @@ body {
 
 .sec__introduction {
   background-color: #74cfae;
-  padding-top: 50px;
 }
 
 .intro-inner {
   justify-content: space-around;
   align-items: flex-start;
+  padding-top: 50px;
 }
 
 .intro_desc {
@@ -159,51 +171,40 @@ body {
   padding: 60px 0 70px 0;
 }
 
-.works-inner h1 {
-  margin-bottom: 40px;
-}
-
 .works__img_box {
+  margin-top: 40px;
   flex-wrap: wrap;
 }
 
 .works__img {
-  margin: 0 100px 80px 0;
+  margin: 80px 0 0 100px;
 }
 
-.works__img:nth-child(3n) {
-  margin-right: 0;
+.works__img:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-  /* 一番左下とそれ以降の全て */
-.works__img:nth-child(3n+1):nth-last-child(-n+3),
-.works__img:nth-child(3n+1):nth-last-child(-n+3) ~ .works__img {
-  margin-bottom: 90px;
+.works__img:nth-child(-n+3) {
+  margin-top: 0px;
 }
 
 .mail_box {
-  display: flex;
+  margin-top: 90px;
   padding: 0 90px;
   align-items: flex-start;
-  /* 内包する要素の縦方向を揃える */
   justify-content: center;
-}
-
-.mail_box_elements {
-  margin-right: 90px;
-}
-
-.mail_box_elements:last-child {
-  margin-right: 0;
 }
 
 .mail-text {
   width: 570px;
 }
 
-.btn_email a {
+.btn_email {
+  margin-left: 90px;
+}
+
+.anc_email {
   padding: 14px 20px;
-  /* 折り返ししない */
   white-space: nowrap;
 }
 
@@ -218,17 +219,16 @@ body {
   width: 1028px;
 }
 
-.skills-inner h1 {
-  margin-bottom: 40px;
+.skills__img_box {
+  margin-top: 40px;
 }
 
 .skills__img {
-  padding-right: 180px;
+  margin-left: 180px;
 }
 
-.skills__img:last-child {
-  font-size: 16px;
-  padding-right: 0;
+.skills__img:first-child {
+  margin-left: 0;
 }
 
 .skills_figcaption {
@@ -243,13 +243,8 @@ body {
   padding: 200px 0;
 }
 
-.nav__sns {
-  display: table;
-  margin: 0 auto;
-}
-
-.nav__sns_elements {
-  display: table-cell;
+.nav__sns_box {
+  justify-content: center;
 }
 
 .sns__icon {
