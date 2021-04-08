@@ -163,6 +163,10 @@ img {
   text-align: center;
 }
 
+.intro_desc p {
+  line-height: 24px;
+}
+
 .intro_desc h2 {
   margin-top: 20px;
 }
