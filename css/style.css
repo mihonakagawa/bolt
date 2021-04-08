@@ -291,7 +291,7 @@ img {
 /* footer */
 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .flex-container {
     display: block;
   }
@@ -299,8 +299,7 @@ img {
   .header {
     
   }
-}
-
+} */
 
 /* @media (max-width: 767px) {
 
