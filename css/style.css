@@ -10,6 +10,7 @@ body {
 
 .container {
   width: 100%;
+  /* 背景色のみ画面いっぱいに広がる */
 }
 
 .inner {
@@ -28,6 +29,10 @@ body {
 .heading {
   font-size: 24px;
   font-family: "Raleway";
+}
+
+.flex-container {
+  display: flex;
 }
 
 /* 共通部分ここまで＿＿＿＿＿＿＿＿＿＿＿＿ */
@@ -83,7 +88,6 @@ body {
 
 .header-inner {
   padding: 15px 0;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -132,7 +136,6 @@ body {
 }
 
 .intro-inner {
-  display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
@@ -161,7 +164,6 @@ body {
 }
 
 .works__img_box {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -220,10 +222,6 @@ body {
   margin-bottom: 40px;
 }
 
-.skills__img_box {
-  display: flex;
-}
-
 .skills__img {
   padding-right: 180px;
 }
@@ -272,18 +270,17 @@ body {
 }
 
 .copy-wright {
-  display: flex;
   justify-content: flex-end;
   color: #fff;
 }
 
 /* フッターここまで__________________________*/
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
 }
 
 
 @media (max-width: 767px) {
 
-}
+} */
