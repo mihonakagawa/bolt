@@ -1,11 +1,24 @@
 @charset "utf-8";
 
-/* 共通部分ここから＿＿＿＿＿＿＿＿＿＿＿＿ */
+/* 共通 */
 
 body {
   font-family: "Lato";
   font-size: 20px;
   color: #333;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.title-font {
+  font-family: "Raleway";
 }
 
 .container {
@@ -18,32 +31,21 @@ body {
   margin: 0 auto;
 }
 
-.link-btn {
-  background-color: #74cfae;
-}
-
-.icon {
-  font-size: 45px;
-}
-
 .heading {
   font-size: 24px;
-  font-family: "Raleway";
 }
 
-.images {
-  max-width: 100%;
+img {
   vertical-align: bottom;
-  line-height: 1.0em;
 }
 
 .flex-container {
   display: flex;
 }
 
-/* 共通部分ここまで＿＿＿＿＿＿＿＿＿＿＿＿ */
+/* 共通 */
 
-/* ホバーの装飾まとめ ここから＿＿＿＿＿＿＿＿＿＿＿ */
+/* ホバー */
 
 .anchor {
   display: block;
@@ -53,6 +55,7 @@ body {
 
 .anc_contact,
 .anc_email {
+  background-color: #74cfae;
   color: #fff;
   font-size: 12px;
 }
@@ -81,15 +84,17 @@ body {
   background-color: #fff;
 }
 
-/* ホバーの装飾まとめ ここまで＿＿＿＿＿＿＿＿＿＿＿ */
+/* ホバー */
 
-/* ヘッダーここから__________________________*/
+/* header */
 
 .header {
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .header-inner {
@@ -102,6 +107,7 @@ body {
 }
 
 .header__icon {
+  font-size: 40px;
   color: #4e4e4e;
 }
 
@@ -109,29 +115,24 @@ body {
   padding: 14px 12px;
 }
 
-/* ヘッダーここまで__________________________*/
+/* header */
 
-/* メイン ここから__________________________*/
-
-.main {
-  padding-top: 75px;
-  /* ヘッダーの下に回り込む余白分 */
-}
+/* title */
 
 .title {
   width: 100%;
   background-color: #f2f2f2;
-  text-align: center;
+  padding-top: 75px;
+  /* ヘッダーの下に回り込む余白分 */
 }
 
 .title-inner {
   padding: 250px 0;
+  text-align: center;
 }
 
 .title_text {
-  text-align: center;
   color: #74cfae;
-  font-family: "Raleway";
   font-size: 90px;
   font-weight: 700;
 }
@@ -141,6 +142,10 @@ body {
   font-size: 30px;
   margin-top: 20px;
 }
+
+/* title */
+
+/* what we can do */
 
 .sec__introduction {
   background-color: #74cfae;
@@ -158,9 +163,17 @@ body {
   text-align: center;
 }
 
-.intro_desc h1 {
-  margin: 20px 0 35px 0;
+.intro_desc h2 {
+  margin-top: 20px;
 }
+
+.intro_desc p {
+  margin-top: 35px;
+}
+
+/* what we can do */
+
+/* works */
 
 .works {
   background-color: #f2f2f2;
@@ -199,14 +212,15 @@ body {
   width: 570px;
 }
 
-.btn_email {
-  margin-left: 90px;
-}
-
 .anc_email {
   padding: 14px 20px;
   white-space: nowrap;
+  margin-left: 90px;
 }
+
+/* works */
+
+/* skills */
 
 .sec__skills {
   background-color: #4e4e4e;
@@ -235,6 +249,10 @@ body {
   margin-top: 20px;
 }
 
+/* skills */
+
+/* nav */
+
 .navigation {
   background-color: #f2f2f2;
 }
@@ -249,11 +267,12 @@ body {
 
 .sns__icon {
   color: #74cfae;
+  font-size: 45px;
 }
 
-/* メイン ここまで__________________________*/
+/* nav */
 
-/* フッターここから__________________________*/
+/* footer */
 
 .footer {
   background-color: #74cfae;
@@ -265,8 +284,24 @@ body {
 }
 
 .copy-wright {
-  justify-content: flex-end;
+  text-align: right;
   color: #fff;
 }
 
-/* フッターここまで__________________________*/
+/* footer */
+
+
+@media (max-width: 767px) {
+  .flex-container {
+    display: block;
+  }
+
+  .header {
+    
+  }
+}
+
+
+/* @media (max-width: 767px) {
+
+} */
