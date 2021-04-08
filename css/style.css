@@ -17,6 +17,10 @@ li {
   display: inline-block;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .title-font {
   font-family: "Raleway";
 }
@@ -33,10 +37,6 @@ li {
 
 .heading {
   font-size: 24px;
-}
-
-img {
-  vertical-align: bottom;
 }
 
 .flex-container {
@@ -117,13 +117,20 @@ img {
 
 /* header */
 
+/* main共通 */
+
+.main {
+  padding-top: 70px;
+  /* ヘッダーの下に回り込む余白分 */
+}
+
+/* main共通 */
+
 /* title */
 
 .title {
   width: 100%;
   background-color: #f2f2f2;
-  padding-top: 75px;
-  /* ヘッダーの下に回り込む余白分 */
 }
 
 .title-inner {
@@ -202,7 +209,7 @@ img {
 }
 
 .works__img:nth-child(-n+3) {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .mail_box {
@@ -234,10 +241,10 @@ img {
   padding: 70px 0 100px 0;
   color: #fff;
   text-align: center;
-  width: 1028px;
 }
 
 .skills__img_box {
+  justify-content: center;
   margin-top: 40px;
 }
 
