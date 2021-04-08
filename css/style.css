@@ -13,12 +13,10 @@ a {
   text-decoration: none;
 }
 
-li {
-  display: inline-block;
-}
-
 img {
+  max-width: 100%;
   vertical-align: bottom;
+  line-height: 1.0em;
 }
 
 .title-font {
@@ -48,9 +46,7 @@ img {
 /* ホバー */
 
 .anchor {
-  display: block;
   transition: 0.3s;
-  text-decoration: none;
 }
 
 .anc_contact,
@@ -94,7 +90,6 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;
 }
 
 .header-inner {
@@ -102,6 +97,7 @@ img {
 }
 
 .header_box {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -113,6 +109,10 @@ img {
 
 .anc_contact {
   padding: 14px 12px;
+}
+
+.sp-menu {
+  display: none;
 }
 
 /* header */
@@ -166,19 +166,13 @@ img {
 
 .intro_desc {
   color: #fff;
-  width: 650px;
+  width: 60%;
   text-align: center;
-}
-
-.intro_desc p {
-  line-height: 24px;
-}
-
-.intro_desc h2 {
   margin-top: 20px;
 }
 
 .intro_desc p {
+  line-height: 24px;
   margin-top: 35px;
 }
 
@@ -214,13 +208,12 @@ img {
 
 .mail_box {
   margin-top: 90px;
-  padding: 0 90px;
   align-items: flex-start;
   justify-content: center;
 }
 
 .mail-text {
-  width: 570px;
+  width: 52%;
 }
 
 .anc_email {
@@ -262,7 +255,7 @@ img {
 
 /* skills */
 
-/* nav */
+/* sns */
 
 .navigation {
   background-color: #f2f2f2;
@@ -273,6 +266,7 @@ img {
 }
 
 .nav__sns_box {
+  display: flex;
   justify-content: center;
 }
 
@@ -281,7 +275,7 @@ img {
   font-size: 45px;
 }
 
-/* nav */
+/* sns */
 
 /* footer */
 
@@ -301,17 +295,165 @@ img {
 
 /* footer */
 
+@media screen and (max-width: 1199px) {
+  /* tab */
 
-/* @media (max-width: 767px) {
+  /* 共通 */
+  
+  .inner {
+    width: 97%;
+  }
+
   .flex-container {
     display: block;
   }
 
-  .header {
-    
+  /* 共通 */
+
+  /* what we can do */
+
+  .intro-inner {
+    padding: 50px 0 25px 0;
+    text-align: center;
   }
-} */
 
-/* @media (max-width: 767px) {
+  .intro_desc {
+    width: 80%;
+    margin: 20px auto 0;
+  }
 
-} */
+  /* what we can do */
+
+  /* works */
+
+  .works__img_box {
+    display: block;
+    flex-wrap: nowrap;
+  }
+
+  .works__img {
+    margin: 0;
+  }
+
+  .works__img:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .works__img:first-child {
+    margin-top: 0;
+  }
+
+  .mail_box {
+    margin-top: 80px;
+  }
+
+  .mail-text {
+    width: 100%;
+  }
+
+  .anc_email {
+    margin: 40px 0 0 0;
+  }
+
+  /* works */
+
+  /* skills */
+
+  .skills__img {
+    margin: 88px 0 0 0;
+  }
+
+  .skills__img:first-child {
+    margin: 0;
+  }
+
+  /* skills */
+
+  /* tab */
+}
+
+@media screen and (max-width: 767px) {
+  /* sp */
+  
+  /* header */
+
+  .anc_contact {
+    display: none;
+  }
+
+  .sp-menu {
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .sp-menu_inside {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sp-menu span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+  }
+
+  .sp-menu span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .sp-menu span:nth-child(2) {
+    top: 9px;
+    left: 0;
+  }
+
+  .sp-menu span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+
+  /* header */
+
+  /* title */
+
+  .title-inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .title_text {
+    font-size: 80px;
+  }
+
+  /* title */
+
+  /* sns */
+
+  .nav__sns_box {
+    display: block;
+    text-align: center;
+  }
+
+  .nav__sns_box li {
+    display: block;
+  }
+
+  .nav-inner {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .anc_sns {
+    width: 100%;
+  }
+
+  /* sns */
+
+  /* sp */
+}
