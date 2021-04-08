@@ -10,7 +10,6 @@ body {
 
 .container {
   width: 100%;
-  /* 背景色のみ画面いっぱいに広がる */
 }
 
 .inner {
@@ -24,6 +23,11 @@ body {
 
 .icon {
   font-size: 45px;
+}
+
+.heading {
+  font-size: 24px;
+  font-family: "Raleway";
 }
 
 /* 共通部分ここまで＿＿＿＿＿＿＿＿＿＿＿＿ */
@@ -122,11 +126,6 @@ body {
   margin-top: 20px;
 }
 
-.heading {
-  font-size: 24px;
-  font-family: "Raleway";
-}
-
 .sec__introduction {
   background-color: #74cfae;
   padding-top: 50px;
@@ -135,6 +134,7 @@ body {
 .intro-inner {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .intro_desc {
@@ -144,7 +144,7 @@ body {
 }
 
 .intro_desc h1 {
-  margin: 35px 0;
+  margin: 20px 0 35px 0;
 }
 
 .works {
@@ -184,6 +184,7 @@ body {
   padding: 0 90px;
   align-items: flex-start;
   /* 内包する要素の縦方向を揃える */
+  justify-content: center;
 }
 
 .mail_box_elements {
@@ -277,3 +278,12 @@ body {
 }
 
 /* フッターここまで__________________________*/
+
+@media (max-width: 767px) {
+
+}
+
+
+@media (max-width: 767px) {
+
+}
