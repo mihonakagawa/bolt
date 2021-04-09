@@ -296,7 +296,7 @@ img {
 /* footer */
 
 @media screen and (max-width: 1199px) {
-  /* tab */
+  /* tab  sp 共通 ここから */
 
   /* 共通 */
   
@@ -369,11 +369,11 @@ img {
 
   /* skills */
 
-  /* tab */
+  /* tab sp 共通 ここまで */
 }
 
 @media screen and (max-width: 767px) {
-  /* sp */
+  /* spのみ ここから*/
   
   /* header */
 
@@ -455,5 +455,5 @@ img {
 
   /* sns */
 
-  /* sp */
+  /* spのみ ここまで*/
 }
