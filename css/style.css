@@ -186,7 +186,7 @@ img {
 
 .works-inner {
   text-align: center;
-  padding: 60px 0 70px 0;
+  padding: 60px 0 70px;
 }
 
 .works__img_box {
@@ -231,7 +231,7 @@ img {
 }
 
 .skills-inner {
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   color: #fff;
   text-align: center;
 }
@@ -285,7 +285,7 @@ img {
 
 .footer-inner {
   margin: 0 auto;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
 }
 
 .copy-wright {
@@ -352,7 +352,7 @@ img {
   }
 
   .anc_email {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
   }
 
   /* works */
@@ -360,7 +360,7 @@ img {
   /* skills */
 
   .skills__img {
-    margin: 88px 0 0 0;
+    margin: 88px 0 0;
     /* skills__img:first-childのmargin消去済み */
   }
 
@@ -420,7 +420,7 @@ img {
   /* title */
 
   .title-inner {
-    padding: 160px 0 130px 0;
+    padding: 160px 0 130px;
   }
 
   .title_text {
@@ -442,6 +442,10 @@ img {
 
   .nav-inner {
     padding: 50px 0;
+  }
+
+  .anc_sns {
+    width: 100%;
   }
 
   /* sns */
